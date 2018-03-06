@@ -605,8 +605,9 @@ class LINE:
       callback = def_callback
 
       prof = self.getProfile()
-
-      print("Creator By:™ചচ✾ъπ່७✾ざণاعနัю❍ีざန")
+	
+      print("Few Hack Bot")
+      print("Creator ❦〖ⓕⓔⓦ〗☞ᵀËÄMທஇລ❂قB❂T✓")
       print("mid -> " + prof.mid)
       print("name -> " + prof.displayName)
       print("authToken -> " + self.authToken)
