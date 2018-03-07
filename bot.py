@@ -12,7 +12,7 @@ from gtts import gTTS
 from googletrans import Translator
 
 cl = LINETCR.LINE()
-cl.login(token="FEW TOKEN")
+cl.login(token="EqeVfBtOo50PjVWtB8z5.Y2BTmJl2+nKQvipLjEVsLq.FZ8sfhWr+YhmvbrBUMmPTXhXiXk5MT55EHewAc5qcwE=")
 cl.loginResult()
 
 #ki1 = LINETCR.LINE()
@@ -60,6 +60,9 @@ reload(sys)
 sys.setdefaultencoding('utf-8')
 
 help ="""1
+􀜅􀇔Mask􏿿
+r􀜅􀇔Mask􏿿r
+ 􀜅􀇔Mask􏿿 􀜅􀇔Mask􏿿 􀜅􀇔Mask􏿿
 2
 """
 
