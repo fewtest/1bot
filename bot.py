@@ -1738,41 +1738,41 @@ def bot(op):
                 else:
                     cl.sendText(msg.to,helpt)
 
-            elif msg.text in ["/Bot","/บอท"]:
+            elif msg.text in ["/bot","/Bot","/บอท"]:
                 print "\nHelp pick up..."
                 if wait["lang"] == "JP":
                     cl.sendText(msg.to, helpbot + "\n" +  datetime.today().strftime('%H:%M:%S'))
                 else:
                     cl.sendText(msg.to,helpt)
-            elif msg.text in ["/Steal","/ขโมย"]:
+            elif msg.text in ["/steal","/Steal","/ขโมย"]:
                 print "\nHelp pick up..."
                 if wait["lang"] == "JP":
                     cl.sendText(msg.to, helpsteal + "\n" +  datetime.today().strftime('%H:%M:%S'))
                 else:
                     cl.sendText(msg.to,helpt)
 
-            elif msg.text in ["/Media","/สื่อ"]:
+            elif msg.text in ["/media","/Media","/สื่อ"]:
                 print "\nHelp pick up..."
                 if wait["lang"] == "JP":
                   cl.sendText(msg.to, helpmedia + "\n" +  datetime.today().strftime('%H:%M:%S'))
                 else:
                   cl.sendText(msg.to,helpt)
 
-            elif msg.text in ["/Setting","/ตั้งค่า"]:
+            elif msg.text in ["/setting","/Setting","/ตั้งค่า"]:
                 print "\nHelp pick up..."
                 if wait["lang"] == "JP":
                   cl.sendText(msg.to, helpsettings + "\n" +  datetime.today().strftime('%H:%M:%S'))
                 else:
                   cl.sendText(msg.to,helpt)
 
-            elif msg.text in ["/Protect","/ป้องกัน"]:
+            elif msg.text in ["/protect","/Protect","/ป้องกัน"]:
                 print "\nHelp pick up..."
                 if wait["lang"] == "JP":
                   cl.sendText(msg.to, helpprotect + "\n" +  datetime.today().strftime('%H:%M:%S'))
                 else:
                   cl.sendText(msg.to,helpt)
 
-            elif msg.text in ["/Translate","/แปลภาษา"]:
+            elif msg.text in ["/tranalate","/Translate","/แปลภาษา"]:
                 print "\nHelp pick up..."
                 if wait["lang"] == "JP":
                   cl.sendText(msg.to, helptranslate + "\n" +  datetime.today().strftime('%H:%M:%S'))
@@ -1959,8 +1959,17 @@ def bot(op):
                 msg.contentType = 13
                 msg.contentMetadata = {'mid': mid}
                 cl.sendMessage(msg)
+		
+            elif "me" == msg.text:
+                msg.contentType = 13
+                msg.contentMetadata = {'mid': mid}
+                cl.sendMessage(msg)
 
-
+            elif "Me" == msg.text:
+                msg.contentType = 13
+                msg.contentMetadata = {'mid': mid}
+                cl.sendMessage(msg)
+		
             elif "vdo:" in msg.text.lower():
                 if msg.toType == 2:
                    query = msg.text.split(":")
