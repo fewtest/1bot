@@ -606,7 +606,7 @@ class LINE:
 
       prof = self.getProfile()
 	
-      print("Few Hack Bot")
+      print(" >> Few Hack Bot << ")
       print("Creator ❦〖ⓕⓔⓦ〗☞ᵀËÄMທஇລ❂قB❂T✓")
       print("mid -> " + prof.mid)
       print("name -> " + prof.displayName)
