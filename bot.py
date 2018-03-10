@@ -3328,7 +3328,7 @@ def bot(op):
                 else:
                     wait["clock"] = True
                     now2 = datetime.now()
-                    nowT = datetime.strftime(now2,"༺%H:%M༻")
+                    nowT = datetime.strftime(now2,"【%H:%M】")
                     profile = cl.getProfile()
                     profile.displayName = wait["cName"] + nowT
                     cl.updateProfile(profile)
@@ -3351,7 +3351,7 @@ def bot(op):
             elif msg.text in ["Up"]:
                 if wait["clock"] == True:
                     now2 = datetime.now()
-                    nowT = datetime.strftime(now2,"༺%H:%M༻")
+                    nowT = datetime.strftime(now2,"【%H:%M】")
                     profile = cl.getProfile()
                     profile.displayName = wait["cName"] + nowT
                     cl.updateProfile(profile)
@@ -3360,9 +3360,9 @@ def bot(op):
                     cl.sendText(msg.to,"Please turn on the name clock")
 
 #========================================
-            elif "Hack3 @" in msg.text:            
+            elif "ปก @" in msg.text:            
                 print "[Command]dp executing"
-                _name = msg.text.replace("Hack3 @","")
+                _name = msg.text.replace("ปก @","")
                 _nametarget = _name.rstrip('  ')
                 gs = cl.getGroup(msg.to)
                 targets = []
@@ -3381,8 +3381,8 @@ def bot(op):
                         except:
                             pass
                 print "[Command]dp executed"
-            elif "Hack2mid:" in msg.text:
-                umid = msg.text.replace("Hack2mid:","")
+            elif "รูป:" in msg.text:
+                umid = msg.text.replace("รูป:","")
                 contact = cl.getContact(umid)
                 try:
                     image = "http://dl.profile.line-cdn.net/" + contact.pictureStatus
@@ -3393,10 +3393,10 @@ def bot(op):
                 except Exception as error:
                     cl.sendText(msg.to,(error))
                     pass
-            elif "Hack2 " in msg.text:
+            elif "รูป " in msg.text:
                 if msg.toType == 2:
                     msg.contentType = 0
-                    steal0 = msg.text.replace("Hack2 ","")
+                    steal0 = msg.text.replace("รูป ","")
                     steal1 = steal0.lstrip()
                     steal2 = steal1.replace("@","")
                     steal3 = steal2.rstrip()
@@ -3520,7 +3520,7 @@ def bot(op):
 						
 #========================================
 #-------------------Fungsi spam finish----------------------------
-            elif "Hackginfo" in msg.text:
+            elif "รูปกลุ่ม" in msg.text:
               if msg.from_ in admin:
 					group = cl.getGroup(msg.to)
 					path = "http://dl.profile.line-cdn.net/" + group.pictureStatus
@@ -3983,7 +3983,7 @@ def bot(op):
                     except:
                         pass
 
-            elif ("PK2 " in msg.text):
+            elif ("FK2 " in msg.text):
                    targets = []
                    key = eval(msg.contentMetadata["MENTION"])
                    key["MENTIONEES"][0]["M"]
@@ -3994,7 +3994,7 @@ def bot(op):
                            ki2.kickoutFromGroup(msg.to,[target])
                        except:
                            ki2.sendText(msg.to,"Error")
-            elif ("PK3 " in msg.text):
+            elif ("FK3 " in msg.text):
                    targets = []
                    key = eval(msg.contentMetadata["MENTION"])
                    key["MENTIONEES"][0]["M"]
@@ -4189,8 +4189,8 @@ def bot(op):
 #==============================================================================#
 #==============================================================================#
 
-            elif "hackmid:" in msg.text:
-                saya = msg.text.replace("hackmid:","")
+            elif "Contact:" in msg.text:
+                saya = msg.text.replace("Contact:","")
                 msg.contentType = 13
                 msg.contentMetadata = {"mid":saya}
                 cl.sendMessage(msg)
@@ -4721,8 +4721,8 @@ def bot(op):
                     cl.sendImageWithUrl(msg.to,path)
                 except:
                     pass
-            elif "#picall" in msg.text:
-                       nk0 = msg.text.replace("#picall","")
+            elif "picall" in msg.text:
+                       nk0 = msg.text.replace("picall","")
                        nk1 = nk0.lstrip()
                        nk2 = nk1.replace("","")
                        nk3 = nk2.rstrip()
@@ -4744,8 +4744,8 @@ def bot(op):
                                 except Exception as e:
                                     raise e
 
-            elif "#pictall" in msg.text:
-                       nk0 = msg.text.replace("#pictall","")
+            elif "pictall" in msg.text:
+                       nk0 = msg.text.replace("pictall","")
                        nk1 = nk0.lstrip()
                        nk2 = nk1.replace("","")
                        nk3 = nk2.rstrip()
@@ -4768,8 +4768,8 @@ def bot(op):
                                     cl.sendImageWithUrl(msg.to, path)
                                 except Exception as e:
                                     raise e
-            elif "#hackall" in msg.text:
-                       nk0 = msg.text.replace("#hackall","")
+            elif "hackall" in msg.text:
+                       nk0 = msg.text.replace("hackall","")
                        nk1 = nk0.lstrip()
                        nk2 = nk1.replace("","")
                        nk3 = nk2.rstrip()
@@ -4816,9 +4816,9 @@ def bot(op):
                         except Exception as e:
                             raise e
                 print "[Command]dp executed"
-            elif "Fh3url @" in msg.text:
+            elif "ลิ้งรูป @" in msg.text:
                 print "[Command]dp executing"
-                _name = msg.text.replace("Fh3url @","")
+                _name = msg.text.replace("ลิ้งรูป @","")
                 _nametarget = _name.rstrip('  ')
                 gs = cl.getGroup(msg.to)
                 targets = []
@@ -4836,9 +4836,9 @@ def bot(op):
                         except Exception as e:
                             raise e
                 print "[Command]dp executed"
-            elif "2url @" in msg.text:
+            elif "ลิ้งปก @" in msg.text:
                 print "[Command]cover executing"
-                _name = msg.text.replace("2url @","")    
+                _name = msg.text.replace("ลิ้งปก @","")    
                 _nametarget = _name.rstrip('  ')
                 gs = cl.getGroup(msg.to)
                 targets = []
@@ -5179,7 +5179,7 @@ def bot(op):
                 
             elif msg.text.lower() == 'welcome':
                 ginfo = cl.getGroup(msg.to)
-                cl.sendText(msg.to,"Selamat Datang Di Grup " + str(ginfo.name))
+                cl.sendText(msg.to,"ยินดีต้อนรับเข้าสู่กลุ่ม " + str(ginfo.name))
                 jawaban1 = ("ยินดีต้อนรับเข้าสู่กลุ่ม " + str(ginfo.name))
                 cl.sendText(msg.to,"Owner Grup " + str(ginfo.name) + " :\n" + ginfo.creator.displayName )
                 tts = gTTS(text=jawaban1, lang='th')
@@ -5500,7 +5500,7 @@ def bot(op):
                 start = time.time()
                 cl.sendText(msg.to, "Waiting...")
                 elapsed_time = time.time() - start
-                cl.sendText(msg.to, "%sTamii Server" % (elapsed_time))
+                cl.sendText(msg.to, "%s s" % (elapsed_time))
 # ----------------- BAN MEMBER BY TAG 2TAG ATAU 10TAG MEMBER
             elif ("Bl " in msg.text):
               if msg.from_ in admin:
@@ -6189,7 +6189,7 @@ def nameUpdate():
             #pass
             if wait["clock"] == True:
                 now2 = datetime.now()
-                nowT = datetime.strftime(now2,"༺%H:%M༻")
+                nowT = datetime.strftime(now2,"【%H:%M】")
                 profile = cl.getProfile()
                 profile.displayName = wait["cName"] + nowT
                 cl.updateProfile(profile)
