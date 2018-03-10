@@ -12,7 +12,7 @@ from gtts import gTTS
 from googletrans import Translator
 
 cl = LINETCR.LINE()
-cl.login(token="FEW TOKN")
+cl.login(token="FEW TOKEN")
 cl.loginResult()
 
 #ki1 = LINETCR.LINE()
@@ -1972,7 +1972,7 @@ def bot(op):
             elif msg.text in ["/setting","/Setting","/ตั้งค่า"]:
                 print "\nHelp pick up..."
                 if wait["lang"] == "JP":
-                  cl.sendText(msg.to, helpsettings + "\n" +  datetime.today().strftime('%H:%M:%S'))
+                  cl.sendText(msg.to, helpsetting + "\n" +  datetime.today().strftime('%H:%M:%S'))
                 else:
                   cl.sendText(msg.to,helpt)
 
